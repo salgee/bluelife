@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, inintial-scale=1.0, user-scalable=no">
+  <title></title>
+  <style>
+    .test1{
+      width: 100%;
+      height: 500px;
+      position: relative;
+    }
+    .test2{
+      width: 90%;
+      border: 1px solid red;
+      height: 200px;
+      background: #fff;
+      left: 0;
+      right: 0;
+      top:0;
+      bottom: 0;
+      margin: auto;
+      position: absolute;
+      /*box-shadow: 5px 5px #fff, 5px 5px 0 1px red;*/
+    }
+    .test2:before{
+      content: "";
+      border: 1px solid pink;
+      display: block;
+      height: 100%;
+      margin-left: 3px;
+      margin-top: 3px;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="test1">
+  <div class="test2">
+    CSS 有两个说不上常用的伪类 :before 和 :after
+  </div>
+</div>
+
+</body>
+</html>
